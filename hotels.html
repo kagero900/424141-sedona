@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+	  <header class="main-header">
+	    <nav class="main-nav">
+	    	<a class="logo" href="index.html">
+	    		<img src="img/logo.png" width="138" height="70" alt="Логотип Седоны">
+	    	</a>
+	    	<ul class="main-menu">
+	    		<li><a id="info">Информация</a></li>
+	    		<li><a href="gallery.html">Фото и видео</a></li>
+	    		<li><a href="map.html">Карта штата</a></li>
+	    		<li class="main-menu-current"><a href="hotels.html">Гостиницы</a></li>
+	    	</ul>
+	    </nav>
+	  </header>
+
+	  <main>
+	  	<section class="filters">
+	  		<h2 class="visually-hidden">Фильтр гостиниц</h2>
+	  		<form class="filter" action="https://echo.htmlacademy.ru" method="get">
+	  			<fieldset>
+	  				<legend>Инфраструктура:</legend>
+	  				<ul>
+	  					<li class="filter-option">
+	  						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked>
+	  						Бассейн
+	  					</li>
+	  					<li class="filter-option">
+	  						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">
+	  						Парковка
+	  					</li>
+	  					<li class="filter-option">
+	  						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi">
+	  						Wi-Fi
+	  					</li>
+	  				</ul>
+	  			</fieldset>
+	  			<fieldset>
+	  				<legend>Тип жилья:</legend>
+	  				<ul>
+	  					<li class="filter-option">
+	  						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="inn" checked>
+	  						Гостиница
+	  					</li>
+	  					<li class="filter-option">
+	  						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>
+	  						Мотель
+	  					</li>
+	  					<li class="filter-option">
+	  						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" checked>
+	  						Апартаменты
+	  					</li>
+	  				</ul>
+	  			</fieldset>
+	  			<fieldset>
+	  				<legend>Стоимость в сутки (р):</legend>
+		  			<input type="text" class="price-min" name="price-min" placeholder="От 0">
+		  			<input type="text" class="price-max" name="price-max" placeholder="До 3000">
+		  			<input type="range" min="0" max="4000" step="100" value="3000">
+	  			</fieldset>
+	  			<input type="submit" value="Показать">
+	  		</form>
+	  	</section>
+	  	<div class="results">
+	  		<p>Найдено: 3</p>
+	  		<p>Сортировка:</p>
+	  		<a href="#">По цене</a>
+	  		<a href="#">По типу</a>
+	  		<a href="#">По рейтингу</a>
+	  	</div>
+	  	<section class="catalog">
+	  		<h2 class="visually-hidden">Список гостиниц</h2>
+	  		<ul class="catalog-list">
+	  			<li class="catalog-item">
+	  				<h3>
+	  					<a href="catalog-item.html">Amara Resort & Spa</a>
+	  				</h3>
+	  				<a href="catalog-item.html">
+	  					<img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
+	  				</a>
+	  				<table>
+	  					<tr>
+	  						<td>Гостиница</td>
+	  						<td>От 4000 р.</td>
+	  					</tr>
+	  				</table>
+	  				<p class="stars">4 звезды</p>
+	  				<p class="rating">Рейтинг: 8,5</p>
+	  				<a class="btn" href="catalog-item.html">Подробнее</a>
+	  				<a class="btn" href="#">Забронировать</a>
+	  			</li>
+	  			<li class="catalog-item">
+	  				<h3>
+	  					<a href="catalog-item.html">Desert Quail Inn</a>
+	  				</h3>
+	  				<a href="catalog-item.html">
+	  					<img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
+	  				</a>
+	  				<table>
+	  					<tr>
+	  						<td>Мотель</td>
+	  						<td>От 3000 р.</td>
+	  					</tr>
+	  				</table>
+	  				<p class="stars">3 звезды</p>
+	  				<p class="rating">Рейтинг: 8,9</p>
+	  				<a class="btn" href="catalog-item.html">Подробнее</a>
+	  				<a class="btn" href="#">Забронировать</a>
+	  			</li>
+	  			<li class="catalog-item">
+	  				<h3>
+	  					<a href="catalog-item.html">Villas at 
+	  					Poco Diablo</a>
+	  				</h3>
+	  				<a href="catalog-item.html">
+	  					<img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at 
+	  					Poco Diablo">
+	  				</a>
+	  				<table>
+	  					<tr>
+	  						<td>Апартаменты</td>
+	  						<td>От 2000 р.</td>
+	  					</tr>
+	  				</table>
+	  				<p class="stars">2 звезды</p>
+	  				<p class="rating">Рейтинг: 9,2</p>
+	  				<a class="btn" href="catalog-item.html">Подробнее</a>
+	  				<a class="btn" href="#">Забронировать</a>
+	  			</li>
+	  		</ul>
+	  	</section>
+	  </main>
+
+	  <footer class="main-footer">
+	   	<a href="#info">#visitSEDONA</a>
+	   	<ul class="footer-social">
+		    		<li>
+		    			<a class="social-btn" href="#">Twitter</a>
+		    		</li>
+		    		<li>
+		    			<a class="social-btn" href="#">Facebook</a>
+		    		</li>
+		    		<li>
+		    			<a class="social-btn" href="#">YouTube</a>
+		    		</li>
+		    	</ul>
+	   	<p class="footer-copyright">
+	   		<span>website by</span>
+	   		<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academy-logo.png" width="115" height="41" alt="html academy"></a>
+	   	</p>
+	  </footer>
+  </body>
+</html>
