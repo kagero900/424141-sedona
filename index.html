@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="logo">
+      <a class="header-logo">
         <img src="img/logo.png" width="138" height="70" alt="Логотип Седоны">
       </a>
       <nav class="main-nav">
@@ -22,19 +22,19 @@
     <main>
 
       <section class="promo">
-        <h2 class="visually-hidden"></h2>
+        <h2 class="visually-hidden">Welcome to Sedona</h2>
         <img src="img/welcome.jpg" alt="Welcome to the gorgeous Sedona. «Because the Grand Canyon sucks!»">        
-        <p>
+        <p class="promo-text">
           Седона - небольшой городок в Аризоне, заслуживающий большего!
         </p>
-        <p>
+        <p class="promo-reasons">
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
         </p>
       </section>
 
       <section class="features">
         <div class="feature-item">
-          <h3 class="feature-title">Настоящий городок</h3>
+          <h2 class="feature-title">Настоящий городок</h2>
           <span class="feature-number">- №1 -</span>
           <p class="feature-text">
             Седона - не аттракцион для туристов, там течет своя жизнь
@@ -62,42 +62,42 @@
           <p class="facility-text">
             Не только китайского, но и местного производства!
           </p>
-        </div>				
+        </div>
       </section>
 
-			<section class="features">
+      <section class="features">
 				<img src="img/devilbridge.jpg" alt="Мост Дьявола">
 				<div class="feature-item">
-					<h3 class="feature-title">Там есть Мост Дьявола</h3>
+					<h2 class="feature-title">Там есть Мост Дьявола</h2>
 				  <span class="feature-number">- №2 -</span>
 					<p class="feature-text">
 						Да, по нему можно пройти! Если конечно вы осмелитесь
 					</p>
 				</div>
-			</section>
+      </section>
 
       <section class="features">
 				<div class="feature-item">
-				  <h3 class="feature-title">Небольшая площадь</h3>
+				  <h2 class="feature-title">Небольшая площадь</h2>
 					<span class="feature-number">- №3 -</span>
 					<p class="feature-text">
 					  	Все достопримечательности находятся очень близко
 					</p>
 				</div>
 				<div class="feature-item">
-				  <h3 class="feature-title">Красивая дорога</h3>
+				  <h2 class="feature-title">Красивая дорога</h2>
 					<span class="feature-number">- №4 -</span>
 					<p class="feature-text">
 					  	Ехать в Седону из Лас-Вегаса совсем не скучно!
 					</p>
 				</div>
 				<div class="feature-item">
-				  <h3 class="feature-title">Мало туристов</h3>
+				  <h2 class="feature-title">Мало туристов</h2>
 					<span class="feature-number">- №5 -</span>
 					<p class="feature-text">
 					  Большинство едет в Гранд Каньон и толпится там
 					</p>
-				</div>			  
+				</div>
 			</section>
 
 			<section class="searching">
@@ -108,30 +108,30 @@
           </p>
           <button class="btn-searching">Поиск гостиницы в Седоне</button>
         </div>
-				<form class="searching-form" action="https://echo.htmlacademy.ru" method="get">					
-					<p class="searching-item">
+        <form class="searching-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="searching-item">
     				Дата заезда:
     				<input type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
-    			</p>
-    			<p class="searching-item">
+          </label>
+          <label class="searching-item">
     				Дата выезда:
     				<input type="text" name="date-departure" value="" placeholder="4 июля 2017">
-    			</p>
-    			<p class="searching-item">
+          </label>
+          <label class="searching-item">
     				Взрослые:
     				<input type="number" name="adult" min="1" value="2">
-    			</p>
-    			<p class="searching-item">
+          </label>
+          <label class="searching-item">
     				Дети:
     				<input type="number" name="children" min="0" value="0">
-    			</p>
-    			<input class="btn" type="submit"  value="Найти">
-				</form>
-				<div class="map">
-					<img src="img/map.jpg" width="100%" alt="Месторасположение Седоны">
-				</div>	
-			</section>
-	  </main>
+          </label>
+          <input class="btn" type="submit"  value="Найти">
+        </form>
+        <div class="map">
+          <img src="img/map.jpg" alt="Месторасположение Седоны">
+        </div>
+      </section>
+    </main>
 
     <footer class="main-footer">
       <span>#visitSEDONA</span>
