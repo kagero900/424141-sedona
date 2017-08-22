@@ -60,9 +60,12 @@
 	  			</fieldset>
 	  			<fieldset>
 	  				<legend>Стоимость в сутки (р):</legend>
+		  			<label class="visually-hidden">От
 		  			<input type="text" class="price-min" name="price-min" placeholder="От 0">
-		  			<input type="text" class="price-max" name="price-max" placeholder="До 3000">
-		  			<input type="range" min="0" max="4000" step="100" value="3000">
+		  			</label>
+		  			<label class="visually-hidden">До
+		  			<input type="text" class="price-max" name="price-max" placeholder="До 3000"></label>		  			
+		  			<input type="range" min="0" max="4000" step="100" value="3000">		  			
 	  			</fieldset>
 	  			<input type="submit" value="Показать">
 	  		</form>
