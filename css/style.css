@@ -214,7 +214,7 @@ a {
 }
 .filters {
 	color: #ffffff;
-	background: #487399 url("../img/filter-back.jpg");
+	background: #487399 url("../img/filter-back.jpg") no-repeat;
 }
 .filter fieldset {
 	border: none;
@@ -264,4 +264,47 @@ a {
 .results-list a.current {
 	color: #81b3d2;
 	border: none;
+}
+.catalog-item-title a{
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+.catalog-item-title a:hover, 
+.catalog-item-title a:focus {
+	color: #81b3d2;
+}
+.catalog-item-title a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+.catalog-item-info > a {
+	font-weight: 700;
+	color: #ffffff;
+}
+.btn-more {	
+	background-color: #81b3d2;
+}
+.btn-more:hover,
+.btn-more:focus {	
+	background-color: #669ec0;
+}
+.btn-more:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
+.btn-booking {	
+	background-color: #766357;
+}
+.btn-booking:hover,
+.btn-booking:focus {	
+	background-color: #604e43;
+}
+.btn-booking:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+.catalog-item-rating {
+	color: #666666;
+	background-color: #f2f2f2;
 }
