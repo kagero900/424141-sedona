@@ -2,7 +2,7 @@
 /*#81b3d2-lightblue, #766357-brown, #566a76-for_back, #231F20-for price-min/max
 #6a6a6a-color overlay(checkbox)*/
 body {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	max-width: 1200px;
 	font-family: "PT Sans", sans-serif;
@@ -44,8 +44,8 @@ a {
 }
 .main-menu li {		
 	width: 22.81%;
-	padding-top: 14px;
-	align-content: center;
+	/*padding-top: 14px;*/
+	align-items: center;
 }
 .main-menu li:nth-child(4n+2) {
 	margin-right: auto;
