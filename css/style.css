@@ -2,8 +2,9 @@
 /*#81b3d2-lightblue, #766357-brown, #566a76-for_back, #231F20-for price-min/max
 #6a6a6a-color overlay(checkbox)*/
 body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
+	max-width: 1200px;
 	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -11,6 +12,7 @@ body {
 	color: #000000;
 	text-transform: uppercase;
 	background-color: #ffffff;
+	box-shadow: 0 0 20px #000000;
 }
 a {
 	text-decoration: none;
@@ -25,14 +27,39 @@ a {
 	padding: 0;
 	border: 0;
 }
+.main-header {
+	position: relative;	
+}
 .main-nav {
 	line-height: 26px;
 	font-weight: 700;
 }
 .main-menu {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 56px;	
+	padding: 0 6%;
+	margin: 0;
 	list-style: none;
 }
+.main-menu li {		
+	width: 22.81%;
+	padding-top: 14px;
+	align-content: center;
+}
+.main-menu li:nth-child(4n+2) {
+	margin-right: auto;
+}
+.main-menu li:nth-child(5n-4),
+.main-menu li:nth-child(6n-4) {
+	text-align: left;
+}
+.main-menu li:nth-child(4n+3),
+.main-menu li:nth-child(4n+4) {
+	text-align: right;
+}
 .main-menu a {
+
 	color: #000000;
 }
 .main-menu a:hover,
@@ -45,12 +72,20 @@ a {
 .main-nav a.current {
 	color: #766357;
 }
+.header-logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -69px;
+}
 .promo {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	color: #333333;
 }
 .promo-back {	
-	display: block;
+	/*display: block;*/
 	min-height: 508px;
 	padding-top: 76px;
 	padding-bottom: 80px;
@@ -58,19 +93,45 @@ a {
 }
 
 .promo-text {
+	align-self: center;
+	width: 440px;
+	padding-top: 60px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 }
 .promo-reasons {
+	align-self: center;
+	width: 490px;
+	padding-bottom: 50px; 
 	line-height: 26px;
 }
 .features {
+	display: flex;	
 	margin: 0;
 	padding: 0;
 	text-align: center;
 	color: #ffffff;
 	background-color: #81b3d2;
+}
+.feature-item {
+	display: flex;
+	width: 33.3%;
+	flex-direction: column;
+	align-items: center;
+}
+.feature-title {
+	width: 151px;
+	margin: 0;
+	margin-top: 47px;
+	margin-bottom: 30px;
+}
+.feature-number {
+	width: 50px;
+	margin-bottom: 25px;
+}
+.feature-text {
+	width: 280px;
 }
 .features-union {
 	display: flex;
@@ -83,13 +144,12 @@ a {
 	margin: 0;
 }
 .feature-title,
-.facility-title {
-	margin: 0;
+.facility-title {	
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
 }
-.facility-item {	
+.facility-item {
 	text-align: center;
 }
 .facility-accomodation {
