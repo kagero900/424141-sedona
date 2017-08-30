@@ -11,7 +11,7 @@ body {
 	line-height: 21px;	
 	color: #000000;
 	text-transform: uppercase;
-	background-color: #ffffff;
+	background-color: #f2f2f2;
 	box-shadow: 0 0 20px #000000;
 }
 a {
@@ -28,7 +28,8 @@ a {
 	border: 0;
 }
 .main-header {
-	position: relative;	
+	position: relative;
+	background-color: #ffffff;
 }
 .main-nav {
 	line-height: 26px;
@@ -37,27 +38,37 @@ a {
 .main-menu {
 	display: flex;
 	flex-wrap: wrap;
-	min-height: 56px;	
-	padding: 0 6%;
+	/*min-height: 56px;*/
+	padding: 0;
 	margin: 0;
 	list-style: none;
 }
 .main-menu li {		
-	width: 22.81%;
-	/*padding-top: 14px;*/
+	width: 20%;
+	height: 56px;	
+	display: flex;
+	justify-content: center;
 	align-items: center;
 }
-.main-menu li:nth-child(4n+2) {
-	margin-right: auto;
+.main-menu li:nth-child(2) {	
+	margin-right: 20%;
+	text-align: left;
 }
-.main-menu li:nth-child(5n-4),
+.main-menu li:nth-child(1) {
+	text-align: left;
+}
+.main-menu li:nth-child(3),
+.main-menu li:nth-child(4) {
+	text-align: right;
+}
+/*.main-menu li:nth-child(5n-4),
 .main-menu li:nth-child(6n-4) {
 	text-align: left;
 }
 .main-menu li:nth-child(4n+3),
 .main-menu li:nth-child(4n+4) {
 	text-align: right;
-}
+}*/
 .main-menu a {
 
 	color: #000000;
@@ -89,7 +100,7 @@ a {
 	min-height: 508px;
 	padding-top: 76px;
 	padding-bottom: 80px;
-	background: #487399 url("../img/mountains.jpg") no-repeat;
+	background: #487399 url("../img/mountains.jpg") no-repeat center -56px;
 }
 
 .promo-text {
