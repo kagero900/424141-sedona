@@ -249,7 +249,10 @@ a {
 .facility-text {
 	margin-bottom: 81px;
 }
-.searching-box {
+.searching {
+	position: relative;
+}
+.searching-box {	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -293,13 +296,34 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #503e33;
 }
+
+.modal {
+	position: absolute;
+	top: 291px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 568px;
+	padding: 55px;
+	background-color: #ffffff;
+}
 .searching-item {
-	display: block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin: 0;
+	margin-bottom: 29px;	
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
+	vertical-align: middle;
 }
-.searching-item input {
+.searching-item input {	
+	width: 346px;
+	height: 38px;	
+	padding: 5px 13px;
+	padding-right: 40px;
 	font: inherit;
 	color: #000000;
 	text-transform: uppercase;
@@ -321,7 +345,11 @@ a {
 .searching-item input[type="text"]:-ms-input-placeholder { color: #000000; }
 .searching-item input[type="text"]::-ms-input-placeholder { color: #000000; }
 .searching-item input[type="text"]::placeholder { color: #000000; }
+
 .searching-item a {
+	position: absolute;
+	top: 8px;
+	right: 9px;
 	fill: #cacaca;
 }
 .searching-item a:hover,
@@ -331,10 +359,53 @@ a {
 .searching-item a:active {
 	fill: #81b3d2;
 }
+.counter {
+	width: 114px;
+	margin: 0;
+	margin-bottom: 54px;
+	padding: 0;
+	background-color: #f2f2f2;
+}
+.searching-item-date {
+	margin: 0;
+	align-self: center;
+	width: 226px;
+}
+.searching-item-date input {
+	width: 38px;
+	padding: 5px;
+
+	text-align: center;
+}
+.btn-count {
+	width: 38px;
+	height: 38px;
+	margin: 0;
+	font: inherit;
+	font-size: 24px;
+	/*line-height: 28px;*/
+	/*font-weight: 700;*/
+	vertical-align: top;
+	color: #a9a9a9;
+	background-color: #f2f2f2;
+	border: none;
+	cursor: pointer;
+}
+.btn-count:hover,
+.btn-cover:focus {
+	color: #000000;
+}
+.btn-count:active {
+	color: #81b3d2;
+}
+.form-column {
+	display: flex;
+	justify-content: space-between;
+}
 .btn-submit {
 	width: 458px;
 	height: 58px;	
-	background-color: #81b3d2;	
+	background-color: #81b3d2;
 }
 .btn-submit:hover,
 .btn-submit:focus {
@@ -405,43 +476,166 @@ a {
 .footer-copyright a:active {
 	fill: #bdbbbc;
 }
+
 .filters {	
 	color: #ffffff;
 	background: #487399 url("../img/filter-back.jpg") no-repeat;
 }
 .filter {
 	display: flex;
-	justify-content: space-between;
 	min-height: 217px;
-	padding: 30px 72px;
+	padding: 28px 72px;
+	padding-bottom: 0;
 }
 .filter fieldset {
+	width: 200px;
+	margin: 0;
+	margin-right: 55px;
+	padding: 0;
 	border: none;
 }
 .filter legend {
 	font-size: 16px;
 	font-weight: 700;
+	margin-bottom: 25px;
 }
 .filter ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
-.btn-filter {
-	width: 133px;
-	height: 32px;
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: 400;
-	text-transform: uppercase;
-	color: #ffffff;
+.filter-option {
+	margin-bottom: 23px;
+}
+.filter-option label {
+	display: inline-block;
+	position: relative;
+	padding-left: 40px;
 	cursor: pointer;
-	background-color: transparent;
-	border: 2px solid #ffffff;
-	border-radius: 2px;
+}
+.filter-option label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 23px;
+	height: 23px;
+	background: url("../img/checkbox-off.svg");
+}
+.filter-option input[type=checkbox]:checked + label::before {
+	content: "";
+	width: 27px;
+	background: url("../img/checkbox-on.svg");
+
+}
+.filter-option input[type=checkbox]:focus {
+	border-color: #663d15;
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+.filter-range {
+  width: 318px;
+  margin-left: auto;
+  color: #ffffff;
+  /*text-transform: uppercase;/*временно тут or not*/
+  
+  
+}
+.filter-range-title {
+	margin: 0;
+  margin-bottom: 9px;  
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+
+}
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;/*example-38*/
+  vertical-align: top;/*example-top-why??*/
+  cursor: pointer;  
+}
+.price-controls .price-min,
+.price-controls .price-max {
+  /*width: 90px;content-box/*example-90px*/
+  padding-left: 65px;/*65*/
+}
+.price-controls input {
+  width: 50px;/*50why???*/
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+.range-controls .scale {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
+}
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 20px;
+  height: 23px;
+  background: url("../img/filter-button.svg") 50% 50%;  
+  cursor: pointer;
+}
+.range-toggle:hover {
+	transform: scale(1.1);
+}
+.range-toggle-min {
+  left: 0;
+}
+.range-toggle-max {
+  left: 80%;
+}
+.btn-filter {
+  display: block;
+  width: 137px;
+  height: 36px;
+  margin: 0 auto;
+  /*padding: 6px 33px 6px 35px;*/
+  font-size: 14px;
+line-height: 21px;  
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 .btn-filter:hover,
 .btn-filter:focus {
 	color: #000000;
-	background-color: #ffffff;
+	background: #ffffff;
 }
 .results {
 	display: flex;
@@ -527,21 +721,21 @@ a {
 .catalog-item-stars {
 	align-self: flex-end;
 	display: block;
-	width: 17px;
+	width: 18px;
 	height: 17px;
 	font-size: 0;
 	background: url("../img/star.svg") repeat-x;
 }
 .four-stars {
-	width: 83px;
+	width: 89px;
 	background-repeat: space;
 }
 .three-stars {
-	width: 61px;
+	width: 64px;
 	background-repeat: space;
 }
 .two-stars {
-	width: 39px;
+	width: 41px;
 	background-repeat: space;
 }
 .catalog-item-rating {
