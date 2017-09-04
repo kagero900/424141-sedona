@@ -543,10 +543,10 @@ a {
 }
 .filter-range-title {
 	margin: 0;
-  margin-bottom: 9px;  
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21px;
+	margin-bottom: 9px;  
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 21px;
 }
 .price-controls {
   position: relative;
