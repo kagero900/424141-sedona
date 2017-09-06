@@ -297,13 +297,13 @@ a {
 	background-color: #503e33;
 }
 
-.modal {
+.searching-form {
 	position: absolute;
 	top: 291px;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	width: 568px;
+	max-width: 458px;
 	padding: 55px;
 	background-color: #ffffff;
 }
@@ -329,6 +329,7 @@ a {
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 	border: 2px solid transparent;
+	box-sizing: border-box;
 }
 .searching-item input:hover {
 	background-color: #ebebeb;
@@ -346,33 +347,42 @@ a {
 .searching-item input[type="text"]::-ms-input-placeholder { color: #000000; }
 .searching-item input[type="text"]::placeholder { color: #000000; }
 
-.searching-item a {
+.calendar {
 	position: absolute;
 	top: 8px;
 	right: 9px;
+	border: none;
+	background: none;
+	
+}
+.calendar path {
 	fill: #cacaca;
 }
-.searching-item a:hover,
-.searching-item a:focus {
+.calendar:hover path,
+.calendar:focus path{
 	fill: #000000;
 }
-.searching-item a:active {
+.calendar:active path{
 	fill: #81b3d2;
+}
+.item-common {
+	display: flex;
+	margin-bottom: 54px;
 }
 .counter {
 	width: 114px;
 	margin: 0;
-	margin-bottom: 54px;
+	/*margin-bottom: 54px;*/
 	padding: 0;
 	background-color: #f2f2f2;
 }
-.searching-item-date {
+.item-quantity {
 	margin: 0;
 	align-self: center;
 	width: 226px;
 }
-.searching-item-date input {
-	width: 38px;
+.item-quantity input {
+	width: 28px;
 	padding: 5px;
 
 	text-align: center;
