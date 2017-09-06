@@ -31,6 +31,10 @@ a {
 	padding: 0;
 	border: 0;
 }
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 .main-header {
 	position: relative;
 	background-color: #ffffff;
@@ -412,13 +416,27 @@ a {
 	background-color: #5496bd;
 }
 .map {	
+	min-height: 593px;
 	line-height: 0;
 }
-.main-footer {
+.wrapper {
+	position: relative;
+}
+.footer {
+	
 	display: flex;
 	align-items: center;
 	min-height: 120px;
 	background-color: rgba(255, 255, 255, 0.9);
+}
+.main-footer {
+	position: absolute;
+	max-width: 1200px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	
 }
 .footer-hashtag {
 	width: 165px;
@@ -463,6 +481,9 @@ a {
 	line-height: 26px;
 }
 .footer-copyright a {
+	padding-top: 5px;
+	display: inline-block;
+	vertical-align: middle;
 	fill: #231F20;
 }
 .footer-copyright a:hover,
@@ -473,7 +494,7 @@ a {
 	fill: #bdbbbc;
 }
 
-.filters {	
+.filters {
 	color: #ffffff;
 	background: #487399 url("../img/filter-back.jpg") no-repeat;
 }
@@ -524,10 +545,10 @@ a {
 	background: url("../img/checkbox-on.svg");
 
 }
-.filter-option input[type=checkbox]:focus {
-	border-color: #663d15;
+.filter-option input[type=checkbox]:focus + label::before {
+	border-color: #81b3d2;
 	outline: thin dotted;
-	outline: 5px auto -webkit-focus-ring-color;
+	outline: 5px auto -webkit-focus-ring-color;	
 }
 .filter-range {
   width: 318px;
