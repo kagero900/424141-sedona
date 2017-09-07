@@ -7,7 +7,7 @@
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
 		<a class="header-logo" href="index.html">
 			<img src="img/logo.png" width="138" height="70" alt="Логотип Седоны">
@@ -85,13 +85,13 @@
 			<span class="result-found">Найдено: 3</span>
 			<span class="result-sort">Сортировка:</span>
 			<ul class="results-list">
-				<li><a class="current result-item" href="#">По цене</a></li>
-				<li><a class="result-item" href="#">По типу</a></li>
-				<li><a class="result-item" href="#">По рейтингу</a></li>
+				<li><a class="current" href="#">По цене</a></li>
+				<li><a href="#">По типу</a></li>
+				<li><a href="#">По рейтингу</a></li>
 			</ul>
 			<ul class="results-order">
-				<li><a class="result-arrow" href="#"><span class="visually-hidden">по возрастанию</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11"/></svg></a></li>
-				<li><a class="result-arrow" href="#"><span class="visually-hidden">по убыванию</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
+				<li><a class="result-order-arrow" href="#"><span class="visually-hidden">по возрастанию</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11"/></svg></a></li>
+				<li><a class=" current result-order-arrow" href="#"><span class="visually-hidden">по убыванию</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 10L0 0h11"/></svg></a></li>
 			</ul>  
 		</section>
 
@@ -109,7 +109,12 @@
 					<a class="btn-booking" href="#">Забронировать</a>
 				</div>
 				<div class="catalog-item-rate">
-					<span class="catalog-item-stars four-stars">4 звезды</span>
+					<div class="stars-container">
+						<span class="catalog-item-stars"></span>
+						<span class="catalog-item-stars"></span>
+						<span class="catalog-item-stars"></span>
+						<span class="catalog-item-stars"></span>
+					</div>
 					<span class="catalog-item-rating">Рейтинг: 8,5</span>
 				</div>
 			</article>
@@ -126,7 +131,11 @@
 					<a class="btn-booking" href="#">Забронировать</a>
 				</div>
 				<div class="catalog-item-rate">
-					<span class="catalog-item-stars three-stars">3 звезды</span>
+					<div class="stars-container">
+						<span class="catalog-item-stars"></span>
+						<span class="catalog-item-stars"></span>
+						<span class="catalog-item-stars"></span>
+					</div>
 					<span class="catalog-item-rating">Рейтинг: 8,9</span>
 				</div>	
 			</article>
@@ -143,7 +152,10 @@
 					<a class="btn-booking" href="#">Забронировать</a>		
 				</div>
 				<div class="catalog-item-rate">
-					<span class="catalog-item-stars two-stars">2 звезды</span>
+					<div class="stars-container">
+						<span class="catalog-item-stars"></span>
+						<span class="catalog-item-stars"></span>
+					</div>
 					<span class="catalog-item-rating">Рейтинг: 9,2</span>
 				</div>	
 			</article>
