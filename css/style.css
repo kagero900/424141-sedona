@@ -301,7 +301,7 @@ a {
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	max-width: 458px;
+	width: 458px;
 	padding: 55px;
 	background-color: #ffffff;
 }
@@ -315,12 +315,20 @@ a {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
+}
+.searching-item label {
+		
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+
 }
 .searching-item input {	
 	width: 346px;
-	height: 38px;	
-	padding: 5px 13px;
+	/*height: 38px; в ие лютый ад без высоты*/
+	padding: 4px 10px;
 	padding-right: 40px;
 	font: inherit;
 	color: #000000;
@@ -349,10 +357,15 @@ a {
 	position: absolute;
 	top: 8px;
 	right: 9px;
+	width: 21px;
+	height: 22px;
+	margin: 0;
+	padding: 0;
 	border: none;
 	background: none;
 	
 }
+
 .calendar path {
 	fill: #cacaca;
 }
@@ -369,8 +382,7 @@ a {
 }
 .counter {
 	width: 114px;
-	margin: 0;
-	/*margin-bottom: 54px;*/
+	margin: 0;	
 	padding: 0;
 	background-color: #f2f2f2;
 }
@@ -430,7 +442,8 @@ a {
 	
 	display: flex;
 	align-items: center;
-	min-height: 120px;
+	padding: 36px 0;
+	/*min-height: 120px;*/
 	background-color: rgba(255, 255, 255, 0.9);
 }
 .main-footer {
@@ -459,12 +472,15 @@ a {
 	margin: 0 auto;
 	list-style: none;
 }
+.footer-social li {
+
+}
 .btn-social {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 46px;
-	height: 48px;
+	height: 48px;	
 	background-color: #81b3d2;
 	color: #000000;
 }
@@ -478,14 +494,17 @@ a {
 }
 .footer-copyright {
 	width: 196px;
-	margin-right: 99px;
+	margin: 0;
+	margin-right: 97px;
 }
 .footer-copyright span {
 	font-size: 14px;
 	line-height: 26px;
+
 }
 .footer-copyright a {
-	padding-top: 5px;
+	/*padding-top: 5px;*/
+	margin-left: 3px;
 	display: inline-block;
 	vertical-align: middle;
 	fill: #231F20;
@@ -733,7 +752,7 @@ a {
 	display: flex;
 	/*align-items: center;*/
 	padding: 30px 72px;
-	min-height: 150px;
+	/*min-height: 150px;*/
 	border-bottom: 1px solid #e5e5e5;
 }
 .catalog-item-info {
@@ -769,16 +788,19 @@ a {
 	line-height: 27px;/*а по макету 21px*/
 	text-align: center;
 	vertical-align: middle;
-	
+	color: #666666;
+	background-color: #f2f2f2;
 }
 .catalog-item-title {
 	padding: 0;
 	margin: 0;
+	margin-top: -5px;	
 }
 .catalog-item-title a{
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
+	letter-spacing: 0.1px;
 	color: #000000;
 }
 .catalog-item-title a:hover, 
@@ -788,7 +810,10 @@ a {
 .catalog-item-title a:active {
 	color: rgba(0, 0, 0, 0.3);
 }
-.catalog-item-info > a {
+.catalog-data {
+	margin-top: 8px;
+}
+.catalog-buttons a {
 	display: inline-block;
 	font-weight: 700;
 	color: #ffffff;
@@ -798,7 +823,7 @@ a {
 	bottom: 0;
 	left: 0;
 	display: inline-block;	
-	width: 110px;
+	/*width: 110px;*/
 	padding: 3px 17px;
 	text-align: center;
 	vertical-align: middle;
@@ -818,7 +843,7 @@ a {
 	right: 0;
 	display: inline-block;
 	padding: 3px 17px;
-	width: 142px;	
+	/*width: 142px;	*/
 	background-color: #766357;
 }
 .btn-booking:hover,
@@ -829,7 +854,10 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #503e33;
 }
-.catalog-item-rating {
-	color: #666666;
-	background-color: #f2f2f2;
+.catalog-item-type {
+	display: inline-block;
+	width: 110px;
+	margin-right: 2px;
+	vertical-align: middle;
+	/*box-sizing: border-box;*/
 }
