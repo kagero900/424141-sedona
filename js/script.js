@@ -2,7 +2,7 @@
 	var slide = document.querySelector(".form-show");
 	
 	document.addEventListener("DOMContentLoaded", function (loading){
-		slide.classList.toggle("form-hidden");		
+		slide.classList.toggle("form-hidden");
 	});
 	
 	search.addEventListener("click", function (evt){
