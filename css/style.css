@@ -259,7 +259,7 @@ a {
 	margin-bottom: 25px;
 	font-size: 30px;
 	line-height: 36px;
-	font-weight: 700px;
+	font-weight: 700;
 }
 .searching-text {
 	width: 450px;
@@ -757,7 +757,7 @@ a {
 	border-bottom: 1px solid #e5e5e5;
 }
 .catalog-item-info {
-	width: 258px;
+	width: 260px;
 	margin-left: 30px;
 }
 
