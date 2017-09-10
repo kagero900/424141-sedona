@@ -397,9 +397,6 @@ a
 }
 .btn-searching
 {
-	position: relative;
-	z-index: 2;
-
 	width: 568px;
 	height: 86px;
 
@@ -418,7 +415,7 @@ a
 .searching-form
 {
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	top: 86px;
 	right: 0;
 	left: 0;
@@ -615,8 +612,7 @@ a
 	line-height: 0;
 	width: 1200px;
 	height: 593px;
-	background: url("../img/map.jpg") no-repeat;
-	background-size: cover;
+	background: url("../img/map.jpg") no-repeat;	
 }
 .map iframe
 {
@@ -997,6 +993,7 @@ a
 	margin-left: 34px;
 	padding: 0;
 	padding-top: 4px;
+
 	
 
 }
@@ -1066,7 +1063,7 @@ a
 }
 .catalog-item-info
 {
-	width: 260px;
+	width: 750px;
 	margin-left: 30px;
 }
 .catalog-item-title
@@ -1095,10 +1092,6 @@ a
 {
 	color: rgba(0, 0, 0, .3);
 }
-.catalog-data
-{
-	margin-bottom: 13px;
-}
 .catalog-item-type
 {
 	display: inline-block;
@@ -1114,17 +1107,23 @@ a
 
 	vertical-align: middle;
 }
+.catalog-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
 .catalog-buttons a
 {
 	font-weight: 700;
-
+	margin-right: 5px;
+	margin-top: 13px;
 	color: #fff;
 }
 .btn-more
 {
 	display: inline-block;
 
-	margin-right: 1px;
+	margin-right: 5px;
 	padding: 3px 17px;
 
 	text-align: center;
@@ -1147,6 +1146,7 @@ a
 	display: inline-block;
 
 	padding: 3px 17px;
+	margin-right: 5px;
 
 	vertical-align: middle;
 
