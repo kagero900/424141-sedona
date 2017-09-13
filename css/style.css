@@ -491,6 +491,12 @@ a
 	-webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
 			box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
 }
+.form-content {
+	margin: 0;
+	padding: 0;
+	max-height: 305px;
+	overflow-y: auto;
+}
 .searching-item
 {
 	font-size: 14px;
@@ -621,13 +627,14 @@ a
 {
 	width: 226px;
 	margin: 0;
-
+display: flex;
+justify-content: space-between;
 	-ms-flex-item-align: center;
 		align-self: center;
 }
 .item-quantity:last-child label
 {
-	width: 65px;
+	width: 55px;/*65*/
 	padding-left: 47px;
 }
 .item-quantity input
@@ -818,7 +825,8 @@ a
 .filters
 {
 	color: #fff;
-	background: #487399 url('../img/filter-back.jpg') no-repeat center -56px;
+	background: #487399 url('../img/filter-back.jpg') no-repeat center center;
+	background-size: cover;
 }
 .filter
 {
@@ -836,10 +844,13 @@ a
 {
 	width: 200px;
 	margin: 0;
-	margin-right: 55px;
+	margin-left: 55px;
 	padding: 0;
 
 	border: none;
+}
+.filter-list:nth-child(4n+1){
+	margin-left: 0;
 }
 .filter-list legend
 {
