@@ -619,7 +619,7 @@ a
 {
 	font-size: 0;
 
-	width: 114px;
+	width: 120px;/*114*/
 	margin: 0;
 	padding: 0;
 }
@@ -634,7 +634,7 @@ justify-content: space-between;
 }
 .item-quantity:last-child label
 {
-	width: 55px;/*65*/
+	width: 65px;/*65*/
 	padding-left: 47px;
 }
 .item-quantity input
